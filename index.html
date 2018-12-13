@@ -43,6 +43,17 @@
       </tr>
       </table>
 
+      <!--
+      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+      <tr>
+        <td width="100%" valign="middle">
+          <heading>Preprints</heading>
+        </td>
+      </tr>
+      </table>
+      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+      </table>
+      -->
       <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
       <tr>
         <td width="100%" valign="middle">
@@ -51,8 +62,101 @@
       </tr>
       </table>
       <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+        <tr>
+          <td width="25%"><img src="rig.png" alt="RIG visualization" width="160" style="border-style: none"></td>
+          <td width="75%" valign="top">
+          <p>
+          <a href="https://arxiv.org/abs/1807.04742">
+            <papertitle>Visual Reinforcement Learning with Imagined Goals</papertitle>
+            </a>
+            <br>
+            <a href="https://ashvin.me/">Ashvin Nair*</a>,
+            <strong>Vitchyr Pong*</strong>,
+            Murtaza Dalal,
+            Shikhar Bahl,
+            Steven Lin,
+            <a href="https://people.eecs.berkeley.edu/~svlevine/">
+                Sergey Levine
+            </a>.
+            <em>
+                Neural Information Processing Systems. 2018.
+                <strong>Spotlight.</strong>
+            </em>
+            [<a href="https://arxiv.org/abs/1807.04742">arXiv</a>]
+            [<a href="https://sites.google.com/site/visualrlwithimaginedgoals/">videos</a>]
+            [<a href="https://github.com/vitchyr/rlkit">code</a>]
+            [<a href="https://bair.berkeley.edu/blog/2018/09/06/rig/">blog</a>]
+          </p>
+          <p>
+          For an autonomous agent to fulfill a wide range of user-specified goals
+          at test time, it must be able to learn broadly applicable and
+          general-purpose skill repertoires. Furthermore, to provide the requisite
+          level of generality, these skills must handle raw sensory input such as
+          images. In this paper, we propose an algorithm that acquires such
+          general-purpose skills by combining unsupervised representation learning
+          and reinforcement learning of goal-conditioned policies. Since the
+          particular goals that might be required at test-time are not known in
+          advance, the agent performs a self-supervised "practice" phase where it
+          imagines goals and attempts to achieve them. We learn a visual
+          representation with three distinct purposes: sampling goals for
+          self-supervised practice, providing a structured transformation of raw
+          sensory inputs, and computing a reward signal for goal reaching. We also
+          propose a retroactive goal relabeling scheme to further improve the
+          sample-efficiency of our method. Our off-policy algorithm is efficient
+          enough to learn policies that operate on raw image observations and
+          goals for a real-world robotic system, and substantially outperforms
+          prior techniques.
+          </p>
+          </td>
+        </tr>
       <tr>
-        <td width="25%"><img src="tdm.jpg" alt="TDM visualization" width="160" style="border-style: none"></td>
+        <td width="25%"><img src="composable.png" alt="Composable visualization" width="160" style="border-style: none"></td>
+        <td width="75%" valign="top">
+        <p>
+        <a href="https://arxiv.org/abs/1803.06773">
+          <papertitle>
+              Composable Deep Reinforcement Learning for Robotic Manipulation
+          </papertitle>
+          </a>
+          <br>
+          <a href="https://people.eecs.berkeley.edu/~haarnoja/">
+              Tuomas Haarnoja
+          </a>,
+          <strong>Vitchyr Pong</strong>,
+          Aurick Zhou,
+          Murtaza Dalal,
+          <a href="https://people.eecs.berkeley.edu/~pabbeel/">Pieter
+              Abbeel</a>,
+          <a href="https://people.eecs.berkeley.edu/~svlevine/">
+              Sergey Levine
+          </a>.
+          <em>
+              International Conference on Robotics and Automation (ICRA), 2018.
+          </em>
+          [<a href="https://arxiv.org/pdf/1803.06773.pdf">arXiv</a>]
+          [<a href="https://sites.google.com/view/composing-real-world-policies">video</a>]
+          [<a href="https://github.com/haarnoja/softqlearning/">code</a>]
+        </p>
+        <p>
+        Model-free deep reinforcement learning has been shown to exhibit good
+        performance in domains ranging from video games to simulated robotic
+        manipulation and locomotion. However, model-free methods are known to
+        perform poorly when the interaction time with the environment is
+        limited, as is the case for most real-world robotic tasks. In this
+        paper, we study how maximum entropy policies trained using soft
+        Q-learning can be applied to real-world robotic manipulation. The
+        application of this method to real-world manipulation is facilitated by
+        two important features of soft Q-learning. First, soft Q-learning can
+        learn multimodal exploration strategies by learning policies represented
+        by expressive energy-based models. Second, we show that policies learned
+        with soft Q-learning can be composed to create new policies, and that
+        the optimality of the resulting policy can be bounded in terms of the
+        divergence between the composed policies.
+        </p>
+        </td>
+      </tr>
+      <tr>
+        <td width="25%"><img src="ant-smaller-2.gif" alt="TDM visualization" width="160" style="border-style: none"></td>
         <td width="75%" valign="top">
         <p>
         <a href="https://arxiv.org/pdf/1802.09081.pdf">
@@ -60,7 +164,7 @@
           </a>
           <br>
           <strong>Vitchyr Pong*</strong>,
-          <a href="https://people.eecs.berkeley.edu/~gregoryk/">Shixiang Gu*</a>,
+          <a href="http://sg717.user.srcf.net/">Shixiang Gu*</a>,
           Murtaza Dalal,
           <a href="https://people.eecs.berkeley.edu/~svlevine/">
               Sergey Levine
@@ -69,6 +173,8 @@
               International Conference on Learning Representations. 2018.
           </em>
           [<a href="https://arxiv.org/abs/1802.09081">arXiv</a>]
+          [<a href="https://github.com/vitchyr/rlkit">code</a>]
+          [<a href="https://bair.berkeley.edu/blog/2018/04/26/tdm/">blog</a>]
         </p>
         <p>
         Model-free reinforcement learning (RL) is a powerful, general tool for
